@@ -4,11 +4,11 @@ services:
   php-apache:
     build: .
     container_name: php-apache
-    restart: always
     ports:
       - "8080:80"
     volumes:
-      - ./src:/var/www/html
+      - ./public:/var/www/html
+      - ./vendor:/var/www/html/vendor # Monta a pasta vendor dentro do container
       - ./docker/apache/vhost.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
       - mysql
@@ -16,7 +16,6 @@ services:
   mysql:
     image: mysql:8.0
     container_name: mysql
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
       MYSQL_DATABASE: '${DB_DATABASE}'

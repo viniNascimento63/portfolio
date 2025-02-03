@@ -10,7 +10,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Copia arquivos do projeto para o contêiner
-COPY src/ /var/www/html/
+COPY public/ /var/www/html/
 
 # Define permissões adequadas
 RUN chown -R www-data:www-data /var/www/html
