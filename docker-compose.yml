@@ -8,6 +8,7 @@ services:
       - "8080:80"
     volumes:
       - ./public:/var/www/html
+      - ./public/templates:/var/www/html/templates
       - ./vendor:/var/www/html/vendor # Monta a pasta vendor dentro do container
       - ./docker/apache/vhost.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
