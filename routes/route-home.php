@@ -7,5 +7,5 @@ use Slim\Views\Twig;
 $app->get('/', function (Request $request, Response $response) {
     $view = Twig::fromRequest($request);
 
-    return $view->render($response, 'home.html.twig', ['name' => 'Vinícius']);
+    return $view->render($response, 'home.html.twig');
 });
