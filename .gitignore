@@ -1,4 +1,4 @@
 .env
 *.lock
 /vendor
-public/assets/bootstrap
+public/assets/bootstrap*
