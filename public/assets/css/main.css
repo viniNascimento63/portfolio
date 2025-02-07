@@ -1,1 +1,37 @@
-@import url("./header.css");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap');
+@import url("header.css");
+
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+.outfit-regular {
+    font-family: "Outfit", serif !important;
+    font-optical-sizing: auto!important;
+    font-weight: 400 !important;
+    font-style: normal!important;
+}
+.outfit-medium {
+    font-family: "Outfit", serif !important;
+    font-optical-sizing: auto!important;
+    font-weight: 500 !important;
+    font-style: normal!important;
+}
+.outfit-semibold {
+    font-family: "Outfit", serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 600 !important;
+    font-style: normal!important;
+}
+.outfit-bold {
+    font-family: "Outfit", serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 700 !important;
+    font-style: normal!important;
+}
+
+.main-text-color * {
+    color: whitesmoke !important;
+}
+
+body {
+    background-color: #2c2c2c;
+}
