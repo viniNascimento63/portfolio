@@ -1,7 +1,5 @@
-.header-background-color {
+header {
+    margin-bottom: 6rem;
     background-color: #1f1f1f;
-}
-
-.header-letter-spacing {
     letter-spacing: .5px;
 }

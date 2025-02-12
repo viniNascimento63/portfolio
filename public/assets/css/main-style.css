@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400..900&display=swap');
+@import url("header.css"); 
+@import url("main-content.css"); 
+
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+.poppins-light {
+    font-family: "Poppins", sans-serif !important;
+    font-optical-sizing: auto!important;
+    font-weight: 300 !important;
+    font-style: normal!important;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif !important;
+    font-optical-sizing: auto!important;
+    font-weight: 400 !important;
+    font-style: normal!important;
+}
+.poppins-medium {
+    font-family: "Poppins", sans-serif !important;
+    font-optical-sizing: auto!important;
+    font-weight: 500 !important;
+    font-style: normal!important;
+}
+.poppins-semibold {
+    font-family: "Poppins", sans-serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 600 !important;
+    font-style: normal!important;
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 700 !important;
+    font-style: normal!important;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif !important;
+    font-optical-sizing: auto!important;
+    font-weight: 400 !important;
+    font-style: normal!important;
+}
+.roboto-medium {
+    font-family: "Roboto", sans-serif !important;
+    font-optical-sizing: auto!important;
+    font-weight: 500 !important;
+    font-style: normal!important;
+}
+.roboto-semibold {
+    font-family: "Roboto", sans-serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 600 !important;
+    font-style: normal!important;
+}
+.roboto-bold {
+    font-family: "Roboto", sans-serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 700 !important;
+    font-style: normal!important;
+}
+.roboto-extrabold {
+    font-family: "Roboto", sans-serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 800 !important;
+    font-style: normal!important;
+}
+.roboto-black {
+    font-family: "Roboto", sans-serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: 900 !important;
+    font-style: normal!important;
+}
+
+.main-text-color * {
+    color: whitesmoke !important;
+}
+
+body {
+    background-color: #2a2a2a;
+    letter-spacing: .5px;
+}
