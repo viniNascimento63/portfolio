@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400..900&display=swap');
 @import url("header.css"); 
-@import url("main-content.css"); 
+@import url("main.css"); 
 
 /* <weight>: Use a value from 100 to 900 */
 /* <uniquifier>: Use a unique and descriptive class name */
@@ -78,6 +78,6 @@
 }
 
 body {
-    background-color: #2a2a2a;
+    background-color: #171717;
     letter-spacing: .5px;
 }
