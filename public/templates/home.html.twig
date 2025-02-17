@@ -7,13 +7,14 @@
 	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/main-style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 	<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<title>Portfolio dev</title>
 </head>
 
 <body>
 	<section class="poppins-regular main-text-color vw-100">
-		<!-- CABEÇALHO -->
+		{# CABEÇALHO #}
 		<header class="container-fluid p-3">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
@@ -32,10 +33,13 @@
 								<a class="nav-link active" aria-current="page" href="#">Início</a>
 							</li>
 							<li class="nav-item mx-2">
-								<a class="nav-link" href="#">Sobre mim</a>
+								<a class="nav-link" href="#">Serviços</a>
+							</li>
+							<li class="nav-item mx-2">
+								<a class="nav-link" href="#">Portfólio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Portfólio</a>
+								<a class="nav-link" href="#">Contato</a>
 							</li>
 						</ul>
 					</div>
@@ -43,37 +47,131 @@
 			</nav>
 		</header>
 
-		<!-- CONTEÚDO PRINCIPAL -->
+		{# CONTEÚDO PRINCIPAL #}
 		<main class="container">
-			<!-- Quem sou eu -->
-			<section class="who-am-i d-flex align-items-center">
-				<!-- Título e descrição -->
+			{# SOBRE #}
+			<section class="who-am-i d-flex align-items-center justify-content-between">
+				{# Título e descrição #}
 				<div class="h-75 w-50 flex-wrap roboto-extrabold">
-					<div class="title fs-1 lh-sm py-2">
+					<div class="title lh-sm py-2">
 						Olá, meu nome é Vinícius,
 						<br>
 						Desenvolvedor Web
 					</div>
-					<div class="poppins-light py-2">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus deserunt officia iste
-						praesentium?
-						Ullam facere doloremque saepe, quis eligendi ut ratione esse praesentium, ex sint explicabo,
-						dolores
-						aperiam dignissimos reprehenderit.
+					<div class="poppins-light pb-2 pe-5">
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus deserunt officia iste
+							praesentium?
+						</p>
 					</div>
+					<div class="pt-2"><button class="btn btn-primary pt-2">Download CV</button></div>
 				</div>
-				<!-- Imagem -->
-				<div class="w-50">
-					<img src="assets/images/Programming-pana.svg" alt="programmer">
+				{# Imagem #}
+				<div class="who-am-image">
+					<img src="assets/images/Programming-pana.svg" alt="programmer" class="w-100">
 				</div>
 			</section>
-			<!-- O que eu faço -->
-			<section></section>
-			<!-- O que eu já fiz -->
+			{# SERVIÇOS #}
+			<section class="what-i-do pt-5 roboto-medium">
+				{# services #}
+				<div>
+					<div class="mb-3">
+						<h2>Serviços</h2>
+					</div>
+					<div class="row my-4">
+						<div class="col rounded-1 p-5 shadow-sm">
+							<i class="bi bi-globe2 fs-1"></i>
+							<span>
+								<h3>Desenvolvimento Web</h3>
+								<p class="poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Doloremque
+									praesentium adipisci consequuntur facilis assumenda sequi omnis quos.</p>
+						</div>
+						</span>
+						<div class="col mx-4 rounded-1 p-5 shadow-sm">
+							<i class="bi bi-code-slash fs-1	"></i>
+							<span>
+								<h3>Desenvolvimento Front-End</h3>
+								<p class="poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+									consectetur ipsam placeat faceres.</p>
+							</span>
+						</div>
+						<div class="col rounded-1 p-5 shadow-sm">
+							<i class="bi bi-hdd-stack fs-1"></i>
+							<i class="bi bi-database fs-1"></i>
+							<span>
+								<h3>Desenvolvimento Back-End</h3>
+								<p class="poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+									quasi
+									ad repellendus, expedita inventore ea deleniti!</p>
+							</span>
+						</div>
+					</div>
+				</div>
+				{# skills #}
+				<div class="skills">
+					<h2>Tecnologias utilizadas</h2>
+					<div class="row">
+						{# presentation #}
+						<div class="col">
+							<h3>Language title</h3>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad laborum ipsa ducimus eaque
+								repudiandae? Deleniti quo dolorum, libero ipsam, recusandae numquam asperiores magnam
+								dignissimos eos.</p>
+						</div>
+						{# technologies #}
+						<div class="col">
+							<div class="row">
+								<div class="col">
+									<i class="devicon-php-plain"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-laravel-original"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-javascript-plain"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-java-plain"></i>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<i class="devicon-docker-plain"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-mysql-original"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-github-original"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-wordpress-plain"></i>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<i class="devicon-html5-plain"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-css3-plain"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-bootstrap-plain"></i>
+								</div>
+								<div class="col">
+									<i class="devicon-tailwindcss-original"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{# PORTFOLIO #}
 			<section></section>
 		</main>
 
-		<!-- RODAPÉ -->
+		{# RODAPÉ #}
 		<footer></footer>
 	</section>
 </body>

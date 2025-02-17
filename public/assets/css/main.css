@@ -1,4 +1,28 @@
 .who-am-i {
-    margin-top: 6rem;
-    padding-top: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.who-am-image {
+    width: 40%;
+}
+
+.who-am-i .title {
+    font-size: 3rem;
+}
+
+.what-i-do .col h3 {
+    font-size: 1.2rem;
+}
+
+.what-i-do .col {
+    background-color: #1f1f1f;
+}
+
+.what-i-do i {
+    color: #1C30B6 !important;
+}
+
+.what-i-do .skills i {
+    font-size: 4rem;
 }
