@@ -26,3 +26,12 @@
 .what-i-do .skills i {
     font-size: 4rem;
 }
+
+.services .d-flex>article {
+    flex: 1;
+    background-color: #1d1d1d;
+}
+
+.services h3 {
+    font-size: 1.4rem;
+}
