@@ -11,27 +11,36 @@
     font-size: 3rem;
 }
 
-.what-i-do .col h3 {
-    font-size: 1.2rem;
+.what-i-do {
+    background-color: #151515;
 }
 
-.what-i-do .col {
-    background-color: #1f1f1f;
+.what-i-do .col h3 {
+    font-size: 1.2rem;
 }
 
 .what-i-do i {
     color: #1C30B6 !important;
 }
 
-.what-i-do .skills i {
-    font-size: 4rem;
-}
-
 .services .d-flex>article {
     flex: 1;
-    background-color: #1d1d1d;
+    background-color: #111111;
 }
 
 .services h3 {
     font-size: 1.4rem;
+}
+
+.skills .dev-icons {
+    max-width: 40%;
+}
+
+.skills .tech-presentation {
+    max-width: 44%;
+}
+
+.skills i {
+    font-size: 3rem;
+    background-color: #151515;
 }
