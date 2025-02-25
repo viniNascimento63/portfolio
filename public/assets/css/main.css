@@ -1,25 +1,25 @@
-.who-am-i {
+.about {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
-.who-am-image {
+.about-image {
     width: 40%;
 }
 
-.who-am-i .title {
+.about .title {
     font-size: 3rem;
 }
 
-.what-i-do {
+.services {
     background-color: #151515;
 }
 
-.what-i-do .col h3 {
+.services .col h3 {
     font-size: 1.2rem;
 }
 
-.what-i-do i {
+.services i {
     color: #1C30B6 !important;
 }
 
@@ -43,4 +43,16 @@
 .skills i {
     font-size: 3rem;
     background-color: #151515;
+}
+
+.projects {
+    background-color: #151515;
+}
+
+.projects article {
+    background-color: #111111;
+}
+
+.contact-image {
+    width: 40%;
 }

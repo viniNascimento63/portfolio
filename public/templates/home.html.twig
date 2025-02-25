@@ -50,30 +50,32 @@
 		{# CONTEÚDO PRINCIPAL #}
 		<main>
 			{# SOBRE #}
-			<section class="who-am-i container d-flex align-items-center justify-content-between py-5">
-				{# Título e descrição #}
-				<div class="h-75 w-50 flex-wrap roboto-extrabold">
-					<div class="title lh-sm py-2">
-						Olá, meu nome é Vinícius,
-						<br>
-						Desenvolvedor Web
+			<section class="about">
+				<div class="container d-flex align-items-center justify-content-between py-5">
+					{# Título e descrição #}
+					<div class="h-75 w-50 flex-wrap roboto-extrabold">
+						<div class="title lh-sm py-2">
+							Olá, meu nome é Vinícius,
+							<br>
+							Desenvolvedor Web
+						</div>
+						<div class="poppins-light pb-2 pe-5">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus deserunt officia iste
+								praesentium?
+							</p>
+						</div>
+						<div class="pt-2"><button class="btn btn-primary pt-2">Download CV</button></div>
 					</div>
-					<div class="poppins-light pb-2 pe-5">
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus deserunt officia iste
-							praesentium?
-						</p>
+					{# Imagem #}
+					<div class="about-image">
+						<img src="assets/images/Programming-pana.svg" alt="programmer" class="w-100">
 					</div>
-					<div class="pt-2"><button class="btn btn-primary pt-2">Download CV</button></div>
-				</div>
-				{# Imagem #}
-				<div class="who-am-image">
-					<img src="assets/images/Programming-pana.svg" alt="programmer" class="w-100">
 				</div>
 			</section>
 			{# SERVIÇOS #}
-			<section class="what-i-do roboto-medium my-py-5">
-				<div class="services container d-flex flex-column my-5 py-5">
+			<section class="services my-py-5">
+				<div class="container d-flex flex-column roboto-medium my-5 py-5">
 					<div class="text-center">
 						<h2>Serviços</h2>
 					</div>
@@ -129,33 +131,43 @@
 							</span>
 						</article>
 						{# technologies #}
-						<article
-							class="dev-icons d-flex flex-wrap justify-content-center ms-2 py-5 px-3">
-							<i class="devicon-php-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-laravel-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-javascript-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-java-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-docker-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-mysql-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-github-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-wordpress-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-html5-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-css3-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-bootstrap-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
-							<i class="devicon-tailwindcss-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+						<article class="dev-icons d-flex flex-wrap justify-content-center ms-2 py-5 px-3">
+							<i
+								class="devicon-php-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-laravel-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-javascript-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-java-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-docker-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-mysql-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-github-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-wordpress-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-html5-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-css3-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-bootstrap-plain border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
+							<i
+								class="devicon-tailwindcss-original border border-secondary border-opacity-25 rounded-1 p-4 m-2"></i>
 						</article>
 					</div>
 				</div>
 			</section>
 			{# PROJECTS #}
-			<section>
-				<div class="projects container d-flex flex-column my-5 py-5">
+			<section class="projects">
+				<div class="container d-flex flex-column my-5 py-5">
 					<div class="text-center">
 						<h2>Projetos</h2>
 					</div>
-					<div class="d-flex flex-wrap gap-3 my-4">
+					<div class="d-flex gap-3 my-4">
 						<article class="rounded-1 shadow p-5">
-							<i class="bi bi-globe2 fs-1"></i>
 							<div class="mt-1">
 								<h3>Projeto 1</h3>
 								<p class="poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -164,7 +176,6 @@
 							</div>
 						</article>
 						<article class="rounded-1 shadow p-5">
-							<i class="bi bi-globe2 fs-1"></i>
 							<div class="mt-1">
 								<h3>Projeto 2</h3>
 								<p class="poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -172,6 +183,41 @@
 									praesentium adipisci consequuntur facilis assumenda sequi omnis quos.</p>
 							</div>
 						</article>
+						<article class="rounded-1 shadow p-5">
+							<div class="mt-1">
+								<h3>Projeto 3</h3>
+								<p class="poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Doloremque
+									praesentium adipisci consequuntur facilis assumenda sequi omnis quos.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="container d-flex align-items-center justify-content-evenly py-5">
+					<div class="contact-image">
+						<img src="assets/images/Mention-bro.svg" alt="programmer" class="w-100">
+					</div>
+					<div>
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp">
+								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
 					</div>
 				</div>
 			</section>
