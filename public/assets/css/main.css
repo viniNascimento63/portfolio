@@ -32,6 +32,10 @@
     font-size: 1.4rem;
 }
 
+.skills {
+    background-color: #151515;
+}
+
 .skills .dev-icons {
     max-width: 40%;
 }
@@ -42,15 +46,11 @@
 
 .skills i {
     font-size: 3rem;
-    background-color: #151515;
-}
-
-.projects {
-    background-color: #151515;
+    background-color: #111111;
 }
 
 .projects article {
-    background-color: #111111;
+    background-color: #151515;
 }
 
 .contact-image {
