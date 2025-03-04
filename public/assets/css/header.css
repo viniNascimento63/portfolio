@@ -2,7 +2,6 @@ header *{
     background-color: #111111 !important;
     color: #9ca3af !important;
     letter-spacing: .5px;
-    transition: all .35s ease-in-out !important;
 }
 
 header .brand *{
@@ -10,27 +9,21 @@ header .brand *{
 }
 
 header .brand:hover {
-    transform: scale(1.02);
+    transform: scale(1.015);
+    transition: transform .2s ease-in-out;
 }
 
 .navbar-nav a:hover {
     color: white !important;
-    transition: color .3s ease;
 }
 
 .navbar-nav a::after {
-    /* content: "";
-    display: block;
-    width: 0;
-    height: 1px;
-    background: #1C30B6;
-    transition: width .3s ease-in-out; */
     content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 1px;
-    bottom: -7px;
+    bottom: -4px;
     left: 0px;
     transform-origin: right bottom;
     background: linear-gradient(270deg, #1C30B6 0%, #17161d 100%);
@@ -40,5 +33,4 @@ header .brand:hover {
 .navbar-nav a:hover::after {
     transform: scaleX(1);
     transform-origin: left bottom;
-    /* width: 100%; */
 }
