@@ -1,5 +1,6 @@
+/* ----------- ABOUT ----------- */
 .about {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 4rem;
 }
 
@@ -9,7 +10,16 @@
 
 .about .title {
     font-size: 3rem;
+    position: relative;
+    border-right: 2px solid rgba(255,255,255,.75);
 }
+/* animation */
+.animation-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+/* ----------- ABOUT END -----------*/
 
 .services {
     background-color: #151515;
