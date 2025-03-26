@@ -12,6 +12,8 @@
     font-size: 3rem;
     position: relative;
     border-right: 2px solid rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* animation */
@@ -22,15 +24,15 @@
 
 @keyframes typewriter {
     from {
-        width: 0;
+        width: 0%;
     }
 
     to {
-        width: auto;
+        width: 100%;
     }
 }
 
-@keyframes blinkTextColor {
+@keyframes blinkTextCursor {
     from {
         border-right-color: rgba(255, 255, 255, .75);
     }
