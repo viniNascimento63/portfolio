@@ -11,15 +11,79 @@
 .about .title {
     font-size: 3rem;
     position: relative;
-    border-right: 2px solid rgba(255, 255, 255, .75);
+    border-right: 2px solid transparent;
     white-space: nowrap;
     overflow: hidden;
 }
 
+.fade {
+    display: inline-block;
+    animation-name: fadeIn;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-fade {
+    animation-name: slideAndFade;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideAndFade {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-bounce {
+    display: inline-block;
+    animation: slideAndBounce 1.5s ease-in-out forwards;
+}
+
+@keyframes slideAndBounce {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    60% {
+        transform: translateX(70%);
+    }
+
+    80% {
+        transform: translateX(-20%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* animation */
 .animation-typewriter {
-    animation: typewriter 2s steps(24) 1s 1 normal both,
-        blinkTextCursor 500ms steps(24) infinite normal;
+    animation: typewriter 2s steps(24) 1.8s 1 normal both,
+        blinkTextCursor 500ms steps(24) .8s infinite normal;
 }
 
 @keyframes typewriter {
@@ -34,7 +98,7 @@
 
 @keyframes blinkTextCursor {
     from {
-        border-right-color: rgba(255, 255, 255, .75);
+        border-right-color: rgba(255, 255, 255, 0.75);
     }
 
     to {
@@ -46,6 +110,7 @@
 
 .services {
     background-color: #151515;
+    padding: 5rem 0;
 }
 
 .services .col h3 {
@@ -53,12 +118,13 @@
 }
 
 .services i {
-    color: #1C30B6 !important;
+    color: #7F96FF !important;
 }
 
 .services .d-flex>article {
     flex: 1;
     background-color: #111111;
+    border: 1px solid #1c31b6cf;
 }
 
 .services h3 {
