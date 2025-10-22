@@ -1,7 +1,7 @@
 services:
   php-apache:
     build: .
-    container_name: php-apache
+    container_name: portfolio
     ports:
       - "80:80"
     volumes:

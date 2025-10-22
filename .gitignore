@@ -2,3 +2,6 @@
 *.lock
 /vendor
 public/assets/bootstrap*
+/node_modules
+package-lock.json
+.gitignore
