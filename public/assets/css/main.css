@@ -145,6 +145,10 @@
     /* border: 1px solid #005d10f0; */
 }
 
+.project-card .card-text {
+    color: #f7f7f7;
+}
+
 .project-card::before {
     content: 'Ver projeto';
     position: absolute;
@@ -156,17 +160,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #f7f7f7;
     font-size: 1.2rem;
     transition: left .5s ease;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .project-card:hover::before {
     left: 0;
 }
 
-.projects .card-title {
+.project-card .card-title {
     font-size: 1.4rem;
     color: #B9FFB7;
 }
