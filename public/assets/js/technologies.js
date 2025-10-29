@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const skillTitle = document.getElementById('skill-title');
     const skillDescription = document.getElementById('skill-description');
-    const icons = document.querySelector('.dev-icons');
+    const icons = document.getElementById('dev-icons');
 
     icons.addEventListener('click', (e) => {
         const icon = e.target;

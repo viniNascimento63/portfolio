@@ -179,9 +179,13 @@
     background-color: #151515;
 }
 
-.skills .dev-icons {
-    max-width: 40%;
+/* .skills #skills-presentation {
+    max-width: 50%;
 }
+
+.skills #dev-icons {
+    max-width: 50%;
+} */
 
 .skills .skill-title {
     max-width: 44%;
