@@ -191,3 +191,9 @@
 .contact-image {
     width: 50%;
 }
+
+@media (min-width: 1200px) {
+    #skills-presentation {
+        width: 50%;
+    }
+}
