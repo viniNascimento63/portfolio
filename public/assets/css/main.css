@@ -183,9 +183,15 @@
     max-width: 46%;
 }
 
+.skill-active {
+    background-color: #252525 !important;
+    transition: all .1s ease !important;
+}
+
 .skills i {
     font-size: 3rem;
     background-color: #111111;
+    cursor: pointer;
 }
 
 .contact-image {
