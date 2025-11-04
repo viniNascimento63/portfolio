@@ -179,17 +179,13 @@
     background-color: #151515;
 }
 
-.skills #dev-icons {
-    max-width: 46%;
-}
-
 .skill-active {
     background-color: #252525 !important;
     transition: all .1s ease !important;
 }
 
 .skills i {
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: #111111;
     cursor: pointer;
 }
@@ -198,8 +194,28 @@
     width: 50%;
 }
 
+@media (min-width: 768px) {
+    .skills i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .skills i {
+        font-size: 2.75rem;
+    }
+}
+
 @media (min-width: 1200px) {
+    .skills i {
+        font-size: 3rem;
+    }
+    
     #skills-presentation {
         width: 50%;
+    }
+
+    #dev-icons {
+        max-width: 46%;
     }
 }
