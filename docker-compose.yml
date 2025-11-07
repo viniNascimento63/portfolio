@@ -6,9 +6,8 @@ services:
       - "80:80"
     volumes:
       - ./public:/var/www/html
-      - ./public/templates:/var/www/html/templates
       - ./routes:/var/www/html/routes
-      - ./vendor:/var/www/html/vendor # Monta a pasta vendor dentro do container
+      - ./vendor:/var/www/html/vendor
       - ./docker/apache/vhost.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
       - mysql
