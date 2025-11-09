@@ -106,6 +106,16 @@
     }
 }
 
+@media (max-width: 768px) {
+    .animation-typewriter {
+        animation: none !important;
+    }
+
+    .about .title {
+        white-space: wrap;
+    }
+    
+}
 /* ----------- ABOUT END -----------*/
 
 .services {

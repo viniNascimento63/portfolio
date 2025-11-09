@@ -9,3 +9,7 @@ $app->get('/', function (Request $request, Response $response) {
 
     return $view->render($response, 'home.html.twig');
 });
+
+$app->get('/contact', function (Request $request, Response $response) {
+    return "hello world";
+});
