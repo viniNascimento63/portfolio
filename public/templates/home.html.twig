@@ -16,36 +16,33 @@
 <body>
 	<section class="roboto-regular main-text-color">
 		{# CABEÇALHO #}
-		<header class="container-fluid p-0" id="home">
-			<nav class="navbar navbar-expand-lg p-4">
+		<header id="home">
+			<nav class="navbar navbar-expand-md p-4">
 				<div class="container">
-					<div class="brand">
-						<a class="text-decoration-none fs-5 poppins-medium" href="/">
-							Vinícius Nascimento
-						</a>
-					</div>
+					<a class="brand text-decoration-none fs-5 poppins-medium" href="/">
+						Vinícius Nascimento
+					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-end poppins-medium" id="navbarNav">
 						<ul class="navbar-nav">
-							<li class="nav-item mx-2">
-								<a class="nav-link position-relative p-0 ms-4" aria-current="page"
-									href="#home">Início</a>
+							<li class="nav-item mx-md-2 py-1 py-md-0">
+								<a class="nav-link position-relative p-0 ms-md-4" aria-current="page"
+									href="/">Início</a>
 							</li>
-							<li class="nav-item mx-2">
-								<a class="nav-link position-relative p-0 ms-4" href="#services">Serviços</a>
+							<li class="nav-item mx-md-2 py-1 py-md-0">
+								<a class="nav-link position-relative p-0 ms-md-4" href="#services">Serviços</a>
 							</li>
-							<li class="nav-item mx-2">
-								<a class="nav-link position-relative p-0 ms-4" href="#projects">Projetos</a>
+							<li class="nav-item mx-md-2 py-1 py-md-0">
+								<a class="nav-link position-relative p-0 ms-md-4" href="#projects">Projetos</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link position-relative p-0 ms-4" href="#contact">Contato</a>
+							<li class="nav-item py-1 py-md-0">
+								<a class="nav-link position-relative p-0 ms-md-4" href="#contact">Contato</a>
 							</li>
 						</ul>
 					</div>
-					<hr>
 				</div>
 			</nav>
 		</header>
@@ -54,32 +51,36 @@
 		<main>
 			<!-- SOBRE -->
 			<section class="about">
-				<div class="container d-flex align-items-center justify-content-between pb-5">
+				<div
+					class="container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between py-5">
 					{# Título e descrição #}
-					<div class="h-75 flex-wrap roboto-extrabold">
-						<div class="fade roboto-regular">
+					<div class="roboto-extrabold text-center text-lg-start pe-lg-4" id="about-title-description">
+						<div class="fade roboto-regular d-none d-lg-block">
 							Olá, eu sou <span class="roboto-black">Vinícius</span>,
 						</div>
 						<div class="title poppins-bold animation-typewriter lh-sm mt-1 mb-2" style="letter-spacing: 0;">
 							<span class="cor-destaque-2">Desenvolvedor</span> Full-Stack
 						</div>
-						<div class="fade roboto-light mb-2 pe-5 w-75" style="font-size: 14px;">
+						<div class="fade roboto-light mb-2 px-4 ps-lg-0 pe-lg-5" style="font-size: 14px;">
 							<strong class="roboto-bold">Sites</strong> e <strong class="roboto-bold">aplicações web
 								eficientes</strong>, <strong class="roboto-bold">otimizadas</strong> e <strong
 								class="roboto-bold">responsivas</strong>, utilizando as
 							melhores tecnologias para o seu projeto.
 						</div>
-						<div class="hstack  pt-1 gap-2">
-							<a class="btn btn-dark rounded-pill roboto-light slide-fade"
+						<div class="fade pt-3 gap-2">
+							<a href="../assets/docs/curriculo-vinicius-out-2025.pdf" download
+								class="btn btn-dark rounded-pill roboto-light slide-fade"
 								style="font-size: 12px; padding: 10px 16px; animation-delay: 4s;" type="button">
 								Download CV
 							</a>
-							<a class="btn btn-dark rounded-pill roboto-light slide-fade"
+							<a href="https://www.linkedin.com/in/vin%C3%ADcius-nascimento-920040214/" target="_blank"
+								class="btn btn-dark rounded-pill roboto-light slide-fade"
 								style="font-size: 12px; padding: 10px 16px; animation-delay: 4.5s;" type="button">
 								LinkedIn
 								<i class="bi bi-linkedin ms-1"></i>
 							</a>
-							<a class="btn btn-dark rounded-pill roboto-light slide-fade"
+							<a href="https://github.com/viniNascimento63" target="_blank"
+								class="btn btn-dark rounded-pill roboto-light slide-fade"
 								style="font-size: 12px; padding: 10px 16px; animation-delay: 5s;" type="button">
 								Github
 								<i class="bi bi-github ms-1"></i>
@@ -87,8 +88,8 @@
 						</div>
 					</div>
 					{# Imagem #}
-					<div class="about-image d-none d-md-block fade">
-						<img src="assets/images/Programming-pana.svg" alt="programmer" class="w-100">
+					<div class="about-image fade text-center pb-4 p-lg-0">
+						<img src="assets/images/eu-mesmo-circle.png" alt="programmer">
 					</div>
 				</div>
 			</section>
@@ -293,6 +294,13 @@
 								<button type="submit"
 									class="btn btn-primary align-self-center rounded-pill fw-bold w-50 px-3">Enviar</button>
 							</form>
+							{% if success %}
+							<p class="alert alert-success">{{ success }}</p>
+							{% endif %}
+
+							{% if error %}
+							<p class="alert alert-danger">{{ error }}</p>
+							{% endif %}
 						</div>
 					</div>
 				</div>
