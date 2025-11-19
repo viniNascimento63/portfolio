@@ -15,7 +15,7 @@ $twig = Twig::create(__DIR__ . '/templates', ['cache' => false]);
 // Add Twig-View Middleware
 $app->add(TwigMiddleware::create($app, $twig));
 
-require_once '/var/www/html/routes/route-home.php';
+require_once '/var/www/html/routes/web.php';
 
 // Run the application
 $app->run();
