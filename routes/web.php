@@ -19,6 +19,7 @@ $app->post('/contact', function (Request $request, Response $response) {
     $view = Twig::fromRequest($request);
 
     $data = (array)$request->getParsedBody();
+
     // "??" -> se o campo não existir, a variável será string vazia (evita undefined index)
     $name = $data['name'] ?? '';
     $email = $data['email'] ?? '';
@@ -26,9 +27,15 @@ $app->post('/contact', function (Request $request, Response $response) {
     $message = $data['message'] ?? '';
 
     if (empty($name) || empty($email) || empty($subject) || empty($message)) {
-        return $view->render($response, 'home.html.twig', [
-            'error' => 'Por favor, preencha todos os campos.'
-        ]);
+        $payload = [
+            "status" => "error",
+            "msg" => "Por favor, preencha todos os campos.",
+            "data" => $data
+        ];
+
+        $response->getBody()->write(json_encode($payload));
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->withStatus(400);
     }
 
     $mail = new PHPMailer(true);
@@ -56,12 +63,30 @@ $app->post('/contact', function (Request $request, Response $response) {
 
         $mail->send();
 
-        return $view->render($response, 'home.html.twig', [
-            'success' => 'Mensagem enviada com sucesso!'
-        ]);
+        $payload = [
+            "status" => "success",
+            "data" => [
+                "name" => $name,
+                "email" => $email,
+                "subject" => $subject,
+                "message" => $message
+            ]
+        ];
+
+        $response->getBody()->write(json_encode($payload));
+
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->withStatus(200);
     } catch (Exception $e) {
-        return $view->render($response, 'home.html.twig', [
-            'error' => 'Erro ao enviar o e-mail: ' . $mail->ErrorInfo
-        ]);
+        $payload = [
+            "status" => "error",
+            "msg" => "Erro no servidor.",
+            "error_detail" => $e->getMessage()
+        ];
+
+        $response->getBody()->write(json_encode($payload));
+        
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->withStatus(500);
     }
 });
