@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const saida = document.getElementById("resultado");
         try {
             const resposta = await fetch("/contact", {method: "POST", body: dados});
-            const json = await resposta.text();
-            saidaContainer.target.classList.add('alert-success');
+            const json = await resposta.json();
+            saidaContainer.classList.add('alert-success');
             saida.innerText = json.msg;
         } catch (erro) {
-            saidaContainer.target.classList.add('alert-danger');
+            saidaContainer.classList.add('alert-danger');
             saida.innerText = "Falha de comunicação com o servidor.";
         }
     });
